@@ -5,112 +5,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Vibrations Video Productions — Stories you can feel</title>
   <meta name="description" content="Vibrations Video Productions is a Los Angeles studio offering AI-assisted B2B videography, professional photography, social media management, content planning and business storytelling.">
-  <meta name="theme-color" content="#0b0a0e">
+  <meta name="theme-color" content="#efefef">
   <meta property="og:title" content="Vibrations Video Productions">
   <meta property="og:description" content="B2B video, photography and social media management in Los Angeles. Stories you can feel.">
   <meta property="og:type" content="website">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
-  <div class="grain" aria-hidden="true"></div>
-
-  <header class="nav" id="nav">
-    <a class="brand" href="#top" aria-label="Vibrations Video Productions — home">
-      <svg class="brand-mark" viewBox="0 0 44 28" aria-hidden="true">
-        <path d="M2 14h5l3-9 5 20 5-24 5 22 4-13 3 4h10" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-      <span class="brand-name">Vibrations<small>Video Productions</small></span>
-    </a>
-    <nav class="nav-links" id="navLinks" aria-label="Primary">
-      <a href="#services">Services</a>
-      <a href="#featured">Featured</a>
-      <a href="#work">Portfolio</a>
-      <a href="#process">Process</a>
-      <a href="#about">About</a>
-      <a class="btn btn-sm" href="#contact">Start a project</a>
-    </nav>
-    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Menu">
-      <span></span><span></span>
-    </button>
-  </header>
 
   <main id="main">
     <!-- HERO -->
     <section class="hero" id="top">
-      <canvas id="waves" aria-hidden="true"></canvas>
-      <div class="hero-hud" aria-hidden="true">
-        <span class="rec"><i></i>REC</span>
-        <span id="timecode">00:00:00:00</span>
-        <span class="hud-right">Los Angeles, CA</span>
-      </div>
-      <div class="hero-inner">
-        <p class="eyebrow">Video · Photography · Social media</p>
-        <h1>
-          <span class="line"><span>Stories you</span></span>
-          <span class="line"><span>can <em>feel.</em></span></span>
-        </h1>
-        <p class="lede">Vibrations Video Productions helps businesses tell their story — with AI-assisted video, professional photography and social media that's planned, created and managed for you.</p>
-        <div class="hero-cta">
-          <a class="btn" href="#contact">Start a project <span aria-hidden="true">→</span></a>
-          <a class="btn btn-ghost" href="#featured"><span class="play-dot" aria-hidden="true"></span>See the work</a>
-        </div>
-      </div>
-      <div class="marquee" aria-hidden="true">
-        <div class="marquee-track">
-          <span>B2B Video</span><i>✦</i><span>Photography</span><i>✦</i><span>Social Media Management</span><i>✦</i><span>Content Planning</span><i>✦</i><span>Content Creation</span><i>✦</i><span>Brand Storytelling</span><i>✦</i><span>Consulting</span><i>✦</i>
-          <span>B2B Video</span><i>✦</i><span>Photography</span><i>✦</i><span>Social Media Management</span><i>✦</i><span>Content Planning</span><i>✦</i><span>Content Creation</span><i>✦</i><span>Brand Storytelling</span><i>✦</i><span>Consulting</span><i>✦</i>
-        </div>
-      </div>
+      <img class="hero-img" src="assets/photos/portrait-red.jpg" alt="" width="2000" height="1123">
+      <header class="nav" id="nav">
+        <a class="brand" href="#top" aria-label="Vibrations Video Productions — home"><svg class="brand-mark" viewBox="0 0 44 28" aria-hidden="true"><path d="M2 14h5l3-9 5 20 5-24 5 22 4-13 3 4h10" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Vibrations</span></a>
+        <nav class="nav-links" id="navLinks" aria-label="Primary">
+          <a href="#services">Services</a>
+          <a href="#featured">Featured</a>
+          <a href="#work">Portfolio</a>
+          <a href="#process">Process</a>
+          <a href="#about">About</a>
+        </nav>
+        <a class="btn btn-light btn-sm nav-cta" href="#contact">Start a project</a>
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Menu"><span></span><span></span></button>
+      </header>
+      <h1 class="hero-line">We help businesses tell stories people can feel.</h1>
+      <ul class="hero-list" aria-label="Services">
+        <li>+ B2B videography</li>
+        <li>+ Photography</li>
+        <li>+ Social media management</li>
+        <li>+ Content planning</li>
+      </ul>
+      <p class="hero-word" aria-hidden="true"><span>Vibrations</span><span>Video</span></p>
+    </section>
+
+    <!-- INTRO -->
+    <section class="section intro">
+      <p class="intro-small reveal">Vibrations Video Productions is a Los Angeles creative studio. One team to plan it, shoot it and post it — so your story stays consistent everywhere your audience meets you.</p>
+      <p class="intro-big reveal">AI-assisted video, professional photography and social media that's planned, created and managed for you — built to move a business forward.</p>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track"><span class="tile">B2B Videography</span><span class="tile">Photography</span><span class="tile">Social Media Management</span><span class="tile">Content Planning</span><span class="tile">Content Creation</span><span class="tile">Brand Storytelling</span><span class="tile">Consulting</span><span class="tile">AI-assisted Video</span><span class="tile">B2B Videography</span><span class="tile">Photography</span><span class="tile">Social Media Management</span><span class="tile">Content Planning</span><span class="tile">Content Creation</span><span class="tile">Brand Storytelling</span><span class="tile">Consulting</span><span class="tile">AI-assisted Video</span></div>
+      <div class="marquee-track reverse"><span class="tile">Content Creation</span><span class="tile">Brand Storytelling</span><span class="tile">Consulting</span><span class="tile">AI-assisted Video</span><span class="tile">B2B Videography</span><span class="tile">Photography</span><span class="tile">Social Media Management</span><span class="tile">Content Planning</span><span class="tile">Content Creation</span><span class="tile">Brand Storytelling</span><span class="tile">Consulting</span><span class="tile">AI-assisted Video</span><span class="tile">B2B Videography</span><span class="tile">Photography</span><span class="tile">Social Media Management</span><span class="tile">Content Planning</span></div>
+    </div>
+
+    <section class="section showcase">
+      <p class="showcase-word reveal">©<span id="year">2026</span></p>
+      <figure class="showcase-card reveal">
+        <img src="assets/photos/on-set.jpg" alt="Behind the scenes of an interview shoot: two people talking in director's chairs in front of a red curtain, with cameras, lights and a monitor in the foreground" loading="lazy" width="1600" height="1067">
+      </figure>
+      <p class="showcase-word reveal">Vibrations</p>
     </section>
 
     <!-- SERVICES -->
     <section class="section" id="services">
       <div class="section-head reveal">
-        <p class="eyebrow">01 — Services</p>
-        <h2>Everything between<br>the idea and the upload.</h2>
+        <p class="eyebrow">Services</p>
+        <h2>Everything between the idea and the upload.</h2>
       </div>
       <ol class="services">
-        <li class="service reveal">
-          <span class="num">01</span>
-          <h3>B2B Videography</h3>
-          <p>Business video — brand films, interviews, promos and event coverage — produced with AI-assisted workflows.</p>
-          <span class="tags">Shoot · Edit · AI-assisted</span>
-        </li>
-        <li class="service reveal">
-          <span class="num">02</span>
-          <h3>Photography</h3>
-          <p>Professional portraits, events, brand and editorial photography with a look people stop for.</p>
-          <span class="tags">Portrait · Event · Brand</span>
-        </li>
-        <li class="service reveal">
-          <span class="num">03</span>
-          <h3>Social Media Management</h3>
-          <p>Your channels run for you, day to day — posting, scheduling and keeping your brand present and consistent.</p>
-          <span class="tags">Manage · Schedule · Post</span>
-        </li>
-        <li class="service reveal">
-          <span class="num">04</span>
-          <h3>Social &amp; Content Planning</h3>
-          <p>A clear plan for what to post, where and when, so every piece of content has a job to do.</p>
-          <span class="tags">Strategy · Calendar</span>
-        </li>
-        <li class="service reveal">
-          <span class="num">05</span>
-          <h3>Content Creation</h3>
-          <p>Photo, video and short-form content made for the feed and built around your brand.</p>
-          <span class="tags">Photo · Video · Short-form</span>
-        </li>
-        <li class="service reveal">
-          <span class="num">06</span>
-          <h3>Storytelling &amp; Consulting</h3>
-          <p>Business-focused storytelling and hands-on advice to help you find your story and tell it well.</p>
-          <span class="tags">Story · Advice</span>
-        </li>
+        <li class="service reveal"><span class="num">01</span><h3>B2B Videography</h3><p>Business video — brand films, interviews, promos and event coverage — produced with AI-assisted workflows.</p><span class="tags">Shoot · Edit · AI-assisted</span></li>
+        <li class="service reveal"><span class="num">02</span><h3>Photography</h3><p>Professional portraits, events, brand and editorial photography with a look people stop for.</p><span class="tags">Portrait · Event · Brand</span></li>
+        <li class="service reveal"><span class="num">03</span><h3>Social Media Management</h3><p>Your channels run for you, day to day — posting, scheduling and keeping your brand present and consistent.</p><span class="tags">Manage · Schedule · Post</span></li>
+        <li class="service reveal"><span class="num">04</span><h3>Social &amp; Content Planning</h3><p>A clear plan for what to post, where and when, so every piece of content has a job to do.</p><span class="tags">Strategy · Calendar</span></li>
+        <li class="service reveal"><span class="num">05</span><h3>Content Creation</h3><p>Photo, video and short-form content made for the feed and built around your brand.</p><span class="tags">Photo · Video · Short-form</span></li>
+        <li class="service reveal"><span class="num">06</span><h3>Storytelling &amp; Consulting</h3><p>Business-focused storytelling and hands-on advice to help you find your story and tell it well.</p><span class="tags">Story · Advice</span></li>
       </ol>
     </section>
 
@@ -118,9 +83,8 @@
     <section class="section feature" id="featured">
       <div class="feature-head">
         <div class="feature-copy reveal">
-          <p class="eyebrow">02 — Featured work</p>
-          <h2>Taste of <em>Soul</em> LA</h2>
-          <p class="feature-role">Social media management · 2026</p>
+          <p class="eyebrow">Featured work · Social media management · 2026</p>
+          <h2>Taste of Soul LA</h2>
           <p>Vibrations Video Productions manages social media for Taste of Soul, the free family festival that takes over Crenshaw Boulevard in Los Angeles.</p>
           <p>From planning the content to capturing the people, the music and the street on the day, the job is to make the feed feel like being there. In 2026, it did.</p>
         </div>
@@ -147,26 +111,31 @@
 
     <!-- FEATURED: CASH ROOM CONVOS -->
     <section class="section show" id="cash-room-convos">
-      <div class="show-head reveal">
-        <p class="eyebrow">03 — Featured work</p>
-        <h2>Cash Room <em>Convos</em></h2>
-        <p class="feature-role">With CJ Mac &amp; Karim Webb</p>
-      </div>
-      <div class="show-copy reveal">
-        <p>Vibrations Video Productions runs Cash Room Convos with CJ Mac and Karim Webb — and keeps the conversation going across its social channels.</p>
-        <div class="show-links">
-          <a class="btn btn-ghost" href="https://www.youtube.com/channel/UC-N3dETT6OVvCQUnTFFbIbg" target="_blank" rel="noopener">YouTube <span aria-hidden="true">↗</span></a>
-          <a class="btn btn-ghost" href="https://www.instagram.com/cashroomconvos/" target="_blank" rel="noopener">Instagram <span aria-hidden="true">↗</span></a>
-          <a class="btn btn-ghost" href="https://www.tiktok.com/@cashroomconvos.hq" target="_blank" rel="noopener">TikTok <span aria-hidden="true">↗</span></a>
+      <div class="show-head">
+        <div class="reveal">
+          <p class="eyebrow">Featured work · With CJ Mac &amp; Karim Webb</p>
+          <h2>Cash Room Convos</h2>
         </div>
+        <div class="show-copy reveal">
+          <p>Vibrations Video Productions runs Cash Room Convos with CJ Mac and Karim Webb — and keeps the conversation going across its social channels.</p>
+          <div class="show-links">
+            <a class="btn btn-ghost btn-sm" href="https://www.youtube.com/channel/UC-N3dETT6OVvCQUnTFFbIbg" target="_blank" rel="noopener">YouTube <span aria-hidden="true">↗</span></a>
+            <a class="btn btn-ghost btn-sm" href="https://www.instagram.com/cashroomconvos/" target="_blank" rel="noopener">Instagram <span aria-hidden="true">↗</span></a>
+            <a class="btn btn-ghost btn-sm" href="https://www.tiktok.com/@cashroomconvos.hq" target="_blank" rel="noopener">TikTok <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="show-grid">
+        <button class="shot reveal" data-full="assets/photos/brand-airport.jpg"><img src="assets/photos/brand-airport.jpg" alt="A crowd gathered around a Marathon Burger food truck on an airport tarmac beside a parked airliner" loading="lazy" width="1600" height="1067"></button>
+        <button class="shot reveal" data-full="assets/photos/brand-opening.jpg"><img src="assets/photos/brand-opening.jpg" alt="Two men posing in front of a Marathon Burger counter" loading="lazy" width="1600" height="1280"></button>
       </div>
     </section>
 
     <!-- PORTFOLIO -->
     <section class="section" id="work">
       <div class="section-head reveal">
-        <p class="eyebrow">04 — Portfolio</p>
-        <h2>Recent frequencies.</h2>
+        <p class="eyebrow">Portfolio</p>
+        <h2>Recent work.</h2>
       </div>
       <div class="gallery">
         <button class="shot reveal" data-full="assets/photos/portrait-headscarf.jpg"><img src="assets/photos/portrait-headscarf.jpg" alt="Portrait of a woman in a rust headscarf and tie-dye top, hands framing her face" loading="lazy" width="1280" height="1600"><span>Portrait</span></button>
@@ -174,57 +143,52 @@
         <button class="shot reveal" data-full="assets/photos/portrait-glasses.jpg"><img src="assets/photos/portrait-glasses.jpg" alt="Portrait of a bearded man in tinted glasses and a black headwrap, looking to the side in front of bookshelves" loading="lazy" width="1280" height="1600"><span>Portrait</span></button>
         <button class="shot reveal" data-full="assets/photos/beach.jpg"><img src="assets/photos/beach.jpg" alt="A woman lying on the sand under a bright blue sky, eyes closed" loading="lazy" width="1600" height="1600"><span>Editorial</span></button>
         <button class="shot reveal" data-full="assets/photos/live-guitars.jpg"><img src="assets/photos/live-guitars.jpg" alt="Two guitarists leaning into each other mid-performance, one with bright pink hair" loading="lazy" width="1280" height="1600"><span>Live music</span></button>
-        <button class="shot reveal" data-full="assets/photos/brand-airport.jpg"><img src="assets/photos/brand-airport.jpg" alt="A crowd gathered around a Marathon Burger food truck on an airport tarmac beside a parked airliner" loading="lazy" width="1600" height="1067"><span>Brand &amp; events</span></button>
         <button class="shot reveal" data-full="assets/photos/studio-portrait.jpg"><img src="assets/photos/studio-portrait.jpg" alt="Studio portrait of a woman crouching in a white tank top and jeans against a white backdrop" loading="lazy" width="1280" height="1600"><span>Studio</span></button>
         <button class="shot reveal" data-full="assets/photos/dance-bw.jpg"><img src="assets/photos/dance-bw.jpg" alt="Black and white photo of two people dancing in a circle of onlookers and photographers" loading="lazy" width="1600" height="1067"><span>Events</span></button>
         <button class="shot reveal" data-full="assets/photos/portrait-braids.jpg"><img src="assets/photos/portrait-braids.jpg" alt="Close portrait of a man with braided hair and gold-framed glasses, head bowed" loading="lazy" width="1280" height="1600"><span>Portrait</span></button>
-        <button class="shot reveal" data-full="assets/photos/portrait-red.jpg"><img src="assets/photos/portrait-red.jpg" alt="Close portrait of a woman in red lipstick looking off-camera in warm light" loading="lazy" width="1600" height="898"><span>Editorial</span></button>
+        <button class="shot reveal" data-full="assets/photos/portrait-red.jpg"><img src="assets/photos/portrait-red.jpg" alt="Close portrait of a woman in red lipstick looking off-camera in warm light" loading="lazy" width="2000" height="1123"><span>Editorial</span></button>
         <button class="shot reveal" data-full="assets/photos/guitar-chair.jpg"><img src="assets/photos/guitar-chair.jpg" alt="A man in a denim jacket sitting in a gold velvet armchair with an acoustic guitar" loading="lazy" width="1143" height="1600"><span>Music</span></button>
         <button class="shot reveal" data-full="assets/photos/portrait-bookstore.jpg"><img src="assets/photos/portrait-bookstore.jpg" alt="Portrait of a young woman in a white t-shirt smiling in front of bookshelves" loading="lazy" width="1280" height="1600"><span>Portrait</span></button>
-        <button class="shot reveal" data-full="assets/photos/brand-opening.jpg"><img src="assets/photos/brand-opening.jpg" alt="Two men posing in front of a Marathon Burger counter" loading="lazy" width="1600" height="1280"><span>Brand &amp; events</span></button>
         <button class="shot reveal" data-full="assets/photos/dance-bw-2.jpg"><img src="assets/photos/dance-bw-2.jpg" alt="Black and white photo of a young woman dancing in a sunlit crowd" loading="lazy" width="1067" height="1600"><span>Events</span></button>
         <button class="shot reveal" data-full="assets/photos/portrait-jersey.jpg"><img src="assets/photos/portrait-jersey.jpg" alt="Portrait of a bearded man in a blue and white jersey, hand on his beard, looking down" loading="lazy" width="1280" height="1600"><span>Portrait</span></button>
         <button class="shot reveal" data-full="assets/photos/editorial-branches.jpg"><img src="assets/photos/editorial-branches.jpg" alt="A woman in a white lace corset with face paint and layered necklaces looking up, against dark branches" loading="lazy" width="1600" height="1067"><span>Editorial</span></button>
-        <button class="shot reveal" data-full="assets/photos/portrait-bw.jpg"><img src="assets/photos/portrait-bw.jpg" alt="Black and white portrait of a person with short blonde hair, glasses and a chest tattoo, looking down" loading="lazy" width="1280" height="1600"><span>Portrait</span></button>
         <button class="shot reveal" data-full="assets/photos/candid-bw.jpg"><img src="assets/photos/candid-bw.jpg" alt="Black and white candid of a bearded man in a cap and glasses, framed between blurred figures in a crowd" loading="lazy" width="1600" height="1068"><span>Events</span></button>
         <button class="shot reveal" data-full="assets/photos/portrait-hands.jpg"><img src="assets/photos/portrait-hands.jpg" alt="Portrait of a young man gesturing with both hands, smiling at the camera in a warmly lit room" loading="lazy" width="1280" height="1600"><span>Portrait</span></button>
       </div>
     </section>
 
     <!-- PROCESS -->
-    <section class="section process" id="process">
+    <section class="section" id="process">
       <div class="section-head reveal">
-        <p class="eyebrow">05 — Process</p>
-        <h2>Four beats.<br>No surprises.</h2>
+        <p class="eyebrow">Process</p>
+        <h2>Four steps. No surprises.</h2>
       </div>
       <div class="steps">
-        <div class="step reveal"><span class="step-k">Discover</span><p>We learn your business, your audience and what your content needs to achieve.</p></div>
-        <div class="step reveal"><span class="step-k">Plan</span><p>A content plan and calendar, so you know what's being made and why.</p></div>
-        <div class="step reveal"><span class="step-k">Create</span><p>Video, photography and social content, shot and edited to fit your brand.</p></div>
-        <div class="step reveal"><span class="step-k">Publish</span><p>Delivered ready to post — or posted and managed for you across your channels.</p></div>
+        <div class="step reveal"><span class="step-n">01</span><h3>Discover</h3><p>We learn your business, your audience and what your content needs to achieve.</p></div>
+        <div class="step reveal"><span class="step-n">02</span><h3>Plan</h3><p>A content plan and calendar, so you know what's being made and why.</p></div>
+        <div class="step reveal"><span class="step-n">03</span><h3>Create</h3><p>Video, photography and social content, shot and edited to fit your brand.</p></div>
+        <div class="step reveal"><span class="step-n">04</span><h3>Publish</h3><p>Delivered ready to post — or posted and managed for you across your channels.</p></div>
       </div>
     </section>
 
     <!-- ABOUT -->
     <section class="section about" id="about">
-      <div class="about-copy reveal">
-        <p class="eyebrow">06 — About</p>
-        <h2>Good content isn't just seen.<br><em>It's felt.</em></h2>
-        <p>Vibrations Video Productions is a Los Angeles creative studio built on a simple belief: the work that lasts is the work that resonates. We pair video and photography with a real understanding of how people find and follow businesses today.</p>
-        <p>One team to plan it, shoot it and post it — so your story stays consistent everywhere your audience meets you.</p>
-        <a class="btn btn-ghost" href="#contact">Work with us <span aria-hidden="true">→</span></a>
+      <div class="reveal">
+        <p class="eyebrow">About</p>
+        <h2>Good content isn't just seen. It's felt.</h2>
       </div>
-      <figure class="about-photo reveal">
-        <img src="assets/photos/on-set.jpg" alt="Behind the scenes of an interview shoot: two people talking in director's chairs in front of a red curtain, with cameras, lights and a monitor in the foreground" loading="lazy" width="1600" height="1067">
-        <div class="eq" aria-hidden="true" id="eq"></div>
-      </figure>
+      <div class="about-copy reveal">
+        <p>Vibrations Video Productions is built on a simple belief: the work that lasts is the work that resonates. We pair video and photography with a real understanding of how people find and follow businesses today.</p>
+        <p>From a single shoot to running your channels week to week, the aim is the same — content that sounds like you and gives people a reason to care.</p>
+        <a class="btn" href="#contact">Work with us <span aria-hidden="true">→</span></a>
+      </div>
     </section>
 
     <!-- CONTACT -->
     <section class="section contact" id="contact">
       <div class="contact-head reveal">
-        <p class="eyebrow">07 — Contact</p>
-        <h2>Let's make<br>some noise.</h2>
+        <p class="eyebrow">Contact</p>
+        <h2>Let's make something people feel.</h2>
         <p class="lede">Tell us about your business and what you need. We'll come back with ideas and next steps.</p>
         <a class="contact-mail" id="contactMail" href="#"></a>
       </div>
@@ -256,16 +220,16 @@
   </main>
 
   <footer class="footer">
-    <div class="footer-big" aria-hidden="true">VIBRATIONS</div>
     <div class="footer-row">
-      <span>© <span id="year"></span> Vibrations Video Productions</span>
+      <span>© <span id="year2"></span> Vibrations Video Productions · Los Angeles</span>
       <nav aria-label="Footer">
         <a href="#services">Services</a>
         <a href="#work">Portfolio</a>
         <a href="#contact">Contact</a>
+        <a href="#top">Back to top ↑</a>
       </nav>
-      <a href="#top">Back to top ↑</a>
     </div>
+    <div class="footer-big" aria-hidden="true">Vibrations</div>
   </footer>
 
   <dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
