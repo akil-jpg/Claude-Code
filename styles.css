@@ -145,6 +145,8 @@ h1, h2, h3 { font-family: var(--display); font-weight: 600; line-height: 1.04; l
 .show { padding-top: 0; }
 .show-head { margin-bottom: clamp(28px, 4vw, 52px); }
 .show h2 { margin-bottom: 0; }
+.roles { display: flex; flex-wrap: wrap; gap: 6px; list-style: none; margin: 18px 0 0; padding: 0; }
+.roles li { padding: 8px 13px; border-radius: 99px; background: var(--card); border: 1px solid rgba(12, 12, 12, 0.06); font-size: 13px; font-weight: 600; letter-spacing: -0.01em; }
 .show-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
 .show-grid { display: grid; grid-template-columns: 1.25fr 1fr; gap: 8px; }
 .show-grid .shot { aspect-ratio: auto; height: clamp(260px, 38vw, 620px); }
