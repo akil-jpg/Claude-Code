@@ -132,6 +132,28 @@
   addEventListener('resize', resize);
   resize();
 
+  /* Count up the headline stats when they scroll into view */
+  if (!reduced) {
+    const fmt = (el, v) => {
+      const dec = el.dataset.count.includes('.') ? 1 : 0;
+      return (el.dataset.prefix || '') + v.toLocaleString('en-US', { minimumFractionDigits: dec, maximumFractionDigits: dec }) + (el.dataset.suffix || '');
+    };
+    const statIO = new IntersectionObserver((entries) => {
+      entries.forEach((en) => {
+        if (!en.isIntersecting) return;
+        statIO.unobserve(en.target);
+        const el = en.target, end = parseFloat(el.dataset.count), start = performance.now();
+        const tick = (now) => {
+          const p = Math.min(1, (now - start) / 1400), e = 1 - Math.pow(1 - p, 3);
+          el.textContent = fmt(el, end * e);
+          if (p < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+      });
+    }, { threshold: 0.6 });
+    $$('[data-count]').forEach((el) => statIO.observe(el));
+  }
+
   /* Photo lightbox */
   const box = $('#lightbox'), boxImg = $('#lightboxImg');
   $$('.shot').forEach((s) => s.addEventListener('click', () => {
