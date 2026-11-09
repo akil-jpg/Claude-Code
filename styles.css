@@ -167,6 +167,13 @@ em { font-style: normal; color: var(--signal); }
 .feature-grid .shot { aspect-ratio: 4 / 5; }
 .feature-grid .shot.wide { grid-column: 1 / -1; aspect-ratio: 3 / 2; }
 
+/* Show */
+.show { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); gap: clamp(28px, 5vw, 80px); align-items: end; }
+.show h2 { font-size: clamp(40px, 6.4vw, 104px); margin-bottom: 18px; }
+.show .feature-role { margin-bottom: 0; }
+.show-copy p { color: #cfc8bb; font-size: 19px; max-width: 44ch; margin-bottom: 26px; }
+.show-links { display: flex; flex-wrap: wrap; gap: 10px; }
+
 /* Gallery */
 .gallery { columns: 3; column-gap: clamp(10px, 1.2vw, 18px); }
 .gallery .shot { margin-bottom: clamp(10px, 1.2vw, 18px); break-inside: avoid; }
@@ -235,7 +242,7 @@ em { font-style: normal; color: var(--signal); }
   .service { grid-template-columns: 44px 1fr; gap: 8px 14px; align-items: start; }
   .service p, .service .tags { grid-column: 2; text-align: left; white-space: normal; }
   .steps { grid-template-columns: repeat(2, 1fr); row-gap: 44px; }
-  .about, .contact, .feature { grid-template-columns: 1fr; }
+  .about, .contact, .feature, .show { grid-template-columns: 1fr; }
   .feature-copy { position: static; }
   .gallery { columns: 2; }
 }
