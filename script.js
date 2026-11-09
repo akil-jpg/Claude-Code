@@ -3,7 +3,7 @@
   'use strict';
 
   // ---- Site settings: edit these ---------------------------------------
-  const CONTACT_EMAIL = 'hello@vibrationsvideoproductions.com';
+  const CONTACT_EMAIL = 'akil@vibrationsvideoproductions.com';
   // ----------------------------------------------------------------------
 
   const $ = (s, el = document) => el.querySelector(s);
@@ -132,20 +132,14 @@
   addEventListener('resize', resize);
   resize();
 
-  /* Showreel: loads the embed on click once a video ID is set in index.html */
-  const frame = $('#reelFrame');
-  $('#reelPlay').addEventListener('click', () => {
-    const yt = frame.dataset.youtube, vm = frame.dataset.vimeo;
-    const src = yt ? `https://www.youtube-nocookie.com/embed/${encodeURIComponent(yt)}?autoplay=1&rel=0`
-      : vm ? `https://player.vimeo.com/video/${encodeURIComponent(vm)}?autoplay=1` : '';
-    if (!src) { $('#reelNote').textContent = 'New reel coming soon'; return; }
-    const iframe = document.createElement('iframe');
-    iframe.src = src;
-    iframe.title = 'Vibrations Video Productions showreel';
-    iframe.allow = 'autoplay; fullscreen; picture-in-picture';
-    iframe.allowFullscreen = true;
-    frame.appendChild(iframe);
-  });
+  /* Photo lightbox */
+  const box = $('#lightbox'), boxImg = $('#lightboxImg');
+  $$('.shot').forEach((s) => s.addEventListener('click', () => {
+    boxImg.src = s.dataset.full;
+    boxImg.alt = $('img', s).alt;
+    box.showModal();
+  }));
+  box.addEventListener('click', () => box.close());
 
   /* Contact: opens the visitor's mail app with the enquiry filled in */
   const mail = $('#contactMail');
