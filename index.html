@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vibrations Video Productions — Stories you can feel</title>
+  <meta name="description" content="Vibrations Video Productions is a full-service video production studio crafting brand films, podcasts, social content and event coverage that people feel.">
+  <meta name="theme-color" content="#0b0a0e">
+  <meta property="og:title" content="Vibrations Video Productions">
+  <meta property="og:description" content="Brand films, podcasts, social content and event coverage. Stories you can feel.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <a class="brand" href="#top" aria-label="Vibrations Video Productions — home">
+      <svg class="brand-mark" viewBox="0 0 44 28" aria-hidden="true">
+        <path d="M2 14h5l3-9 5 20 5-24 5 22 4-13 3 4h10" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="brand-name">Vibrations<small>Video Productions</small></span>
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="Primary">
+      <a href="#reel">Reel</a>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#process">Process</a>
+      <a href="#about">About</a>
+      <a class="btn btn-sm" href="#contact">Start a project</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <canvas id="waves" aria-hidden="true"></canvas>
+      <div class="hero-hud" aria-hidden="true">
+        <span class="rec"><i></i>REC</span>
+        <span id="timecode">00:00:00:00</span>
+        <span class="hud-right">4K · 24 FPS</span>
+      </div>
+      <div class="hero-inner">
+        <p class="eyebrow">Video production studio</p>
+        <h1>
+          <span class="line"><span>Stories you</span></span>
+          <span class="line"><span>can <em>feel.</em></span></span>
+        </h1>
+        <p class="lede">We make films, podcasts and social content that move through an audience like sound through a room — from the first idea to the final frame.</p>
+        <div class="hero-cta">
+          <a class="btn" href="#contact">Start a project <span aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost" href="#reel"><span class="play-dot" aria-hidden="true"></span>Watch the reel</a>
+        </div>
+      </div>
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>Brand Films</span><i>✦</i><span>Podcasts</span><i>✦</i><span>Social Content</span><i>✦</i><span>Events</span><i>✦</i><span>Music Videos</span><i>✦</i><span>Post-Production</span><i>✦</i>
+          <span>Brand Films</span><i>✦</i><span>Podcasts</span><i>✦</i><span>Social Content</span><i>✦</i><span>Events</span><i>✦</i><span>Music Videos</span><i>✦</i><span>Post-Production</span><i>✦</i>
+        </div>
+      </div>
+    </section>
+
+    <!-- REEL -->
+    <section class="section reel" id="reel">
+      <div class="section-head reveal">
+        <p class="eyebrow">01 — Showreel</p>
+        <h2>Press play.</h2>
+      </div>
+      <!-- Add a YouTube or Vimeo ID below to activate the reel:
+           data-youtube="VIDEO_ID"  or  data-vimeo="VIDEO_ID" -->
+      <div class="reel-frame reveal" id="reelFrame" data-youtube="" data-vimeo="">
+        <div class="reel-art" aria-hidden="true">
+          <svg viewBox="0 0 1200 300" preserveAspectRatio="none">
+            <path class="reel-wave w1" d="M0 150 C 100 40, 200 260, 300 150 S 500 40, 600 150 S 800 260, 900 150 S 1100 40, 1200 150"/>
+            <path class="reel-wave w2" d="M0 150 C 75 90, 150 210, 225 150 S 375 90, 450 150 S 600 210, 675 150 S 825 90, 900 150 S 1050 210, 1200 150"/>
+            <path class="reel-wave w3" d="M0 150 C 150 0, 300 300, 450 150 S 750 0, 900 150 S 1100 300, 1200 150"/>
+          </svg>
+        </div>
+        <button class="reel-play" id="reelPlay" aria-label="Play showreel">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>
+        </button>
+        <div class="reel-meta" aria-hidden="true">
+          <span>VVP — Showreel</span>
+          <span id="reelNote">16:9 · Stereo</span>
+        </div>
+        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <div class="section-head reveal">
+        <p class="eyebrow">02 — Services</p>
+        <h2>Everything between<br>the idea and the upload.</h2>
+      </div>
+      <ol class="services">
+        <li class="service reveal">
+          <span class="num">01</span>
+          <h3>Brand Films</h3>
+          <p>Commercials, founder stories and campaign films that tell people who you are — and make them care.</p>
+          <span class="tags">Concept · Script · Shoot · Edit</span>
+        </li>
+        <li class="service reveal">
+          <span class="num">02</span>
+          <h3>Podcast Production</h3>
+          <p>Multi-camera video podcasts with broadcast-grade sound, delivered as full episodes and ready-to-post clips.</p>
+          <span class="tags">Multi-cam · Audio · Clips</span>
+        </li>
+        <li class="service reveal">
+          <span class="num">03</span>
+          <h3>Social Content</h3>
+          <p>Short-form video built for the scroll — Reels, TikToks and Shorts shot and cut to stop thumbs.</p>
+          <span class="tags">Reels · TikTok · Shorts</span>
+        </li>
+        <li class="service reveal">
+          <span class="num">04</span>
+          <h3>Event Coverage</h3>
+          <p>Conferences, launches and live shows captured with energy, then turned into recaps you can use all year.</p>
+          <span class="tags">Live · Recap · Highlights</span>
+        </li>
+        <li class="service reveal">
+          <span class="num">05</span>
+          <h3>Music Videos</h3>
+          <p>Visuals that match the record. Performance, narrative or something stranger — we build the world around the sound.</p>
+          <span class="tags">Treatment · Direction · Color</span>
+        </li>
+        <li class="service reveal">
+          <span class="num">06</span>
+          <h3>Post-Production</h3>
+          <p>Editing, color grading, sound design and motion graphics. Bring us your footage and we'll make it sing.</p>
+          <span class="tags">Edit · Color · Sound · Motion</span>
+        </li>
+      </ol>
+    </section>
+
+    <!-- WORK -->
+    <section class="section" id="work">
+      <div class="section-head reveal">
+        <p class="eyebrow">03 — Selected work</p>
+        <h2>Recent frequencies.</h2>
+      </div>
+      <!-- Each card is a placeholder. Swap the title/category, and add
+           style="background-image:url(assets/work/your-still.jpg)" to .poster
+           (or wrap the card in a link to the video). -->
+      <div class="work-grid">
+        <article class="work-card wide reveal" style="--h:14;--h2:340">
+          <div class="poster"><svg viewBox="0 0 600 200" preserveAspectRatio="none" aria-hidden="true"><path d="M0 100 C 50 20, 100 180, 150 100 S 250 20, 300 100 S 400 180, 450 100 S 550 20, 600 100"/></svg></div>
+          <div class="work-info"><span class="cat">Brand Film</span><h3>Project title</h3><span class="yr">2026</span></div>
+        </article>
+        <article class="work-card reveal" style="--h:268;--h2:210">
+          <div class="poster"><svg viewBox="0 0 600 200" preserveAspectRatio="none" aria-hidden="true"><path d="M0 100 C 30 60, 60 140, 90 100 S 150 60, 180 100 S 240 140, 270 100 S 330 60, 360 100 S 420 140, 450 100 S 510 60, 540 100 S 580 140, 600 100"/></svg></div>
+          <div class="work-info"><span class="cat">Podcast</span><h3>Project title</h3><span class="yr">2026</span></div>
+        </article>
+        <article class="work-card reveal" style="--h:42;--h2:8">
+          <div class="poster"><svg viewBox="0 0 600 200" preserveAspectRatio="none" aria-hidden="true"><path d="M0 100 C 100 -20, 200 220, 300 100 S 500 -20, 600 100"/></svg></div>
+          <div class="work-info"><span class="cat">Social Series</span><h3>Project title</h3><span class="yr">2026</span></div>
+        </article>
+        <article class="work-card reveal" style="--h:170;--h2:230">
+          <div class="poster"><svg viewBox="0 0 600 200" preserveAspectRatio="none" aria-hidden="true"><path d="M0 100 C 40 40, 80 160, 120 100 S 200 40, 240 100 S 320 160, 360 100 S 440 40, 480 100 S 560 160, 600 100"/></svg></div>
+          <div class="work-info"><span class="cat">Event</span><h3>Project title</h3><span class="yr">2025</span></div>
+        </article>
+        <article class="work-card reveal" style="--h:330;--h2:20">
+          <div class="poster"><svg viewBox="0 0 600 200" preserveAspectRatio="none" aria-hidden="true"><path d="M0 100 C 60 10, 120 190, 180 100 S 300 60, 360 100 S 480 190, 540 100 S 590 60, 600 100"/></svg></div>
+          <div class="work-info"><span class="cat">Music Video</span><h3>Project title</h3><span class="yr">2025</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section process" id="process">
+      <div class="section-head reveal">
+        <p class="eyebrow">04 — Process</p>
+        <h2>Four beats.<br>No surprises.</h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><span class="step-k">Discover</span><p>We learn your brand, your audience and the one thing this video has to do.</p></div>
+        <div class="step reveal"><span class="step-k">Plan</span><p>Concept, script, shot list, schedule. You see it on paper before a camera rolls.</p></div>
+        <div class="step reveal"><span class="step-k">Shoot</span><p>A tight crew, cinema cameras and clean sound — on location or in studio.</p></div>
+        <div class="step reveal"><span class="step-k">Finish</span><p>Edit, color, sound and graphics, delivered in every format your channels need.</p></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="about-copy reveal">
+        <p class="eyebrow">05 — About</p>
+        <h2>Good video isn't watched.<br><em>It's felt.</em></h2>
+        <p>Vibrations Video Productions is a creative studio built on a simple belief: the work that lasts is the work that resonates. We pair cinematic craft with a real understanding of how people watch today — on a big screen, in a feed, or with headphones on.</p>
+        <p>Whether it's a thirty-second spot or a weekly show, we treat every project like it's the one people will remember you by.</p>
+        <a class="btn btn-ghost" href="#contact">Work with us <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="eq reveal" aria-hidden="true" id="eq"></div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="contact-head reveal">
+        <p class="eyebrow">06 — Contact</p>
+        <h2>Let's make<br>some noise.</h2>
+        <p class="lede">Tell us what you're making. We'll reply within one business day with ideas, a timeline and a quote.</p>
+        <a class="contact-mail" id="contactMail" href="#"></a>
+      </div>
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <label>Your name
+          <input type="text" name="name" autocomplete="name" required>
+        </label>
+        <label>Email
+          <input type="email" name="email" autocomplete="email" required>
+        </label>
+        <label>What do you need?
+          <select name="type">
+            <option>Brand film</option>
+            <option>Podcast production</option>
+            <option>Social content</option>
+            <option>Event coverage</option>
+            <option>Music video</option>
+            <option>Post-production</option>
+            <option>Something else</option>
+          </select>
+        </label>
+        <label>Tell us about the project
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <button class="btn" type="submit">Send it <span aria-hidden="true">→</span></button>
+        <p class="form-note" id="formNote" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-big" aria-hidden="true">VIBRATIONS</div>
+    <div class="footer-row">
+      <span>© <span id="year"></span> Vibrations Video Productions</span>
+      <nav aria-label="Footer">
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
